@@ -20,10 +20,10 @@ function moreSteps(data) {
         var newDiv = document.createElement("div");
 
         newDiv.classList.add("format");
-
         newDiv.innerHTML =
-        "<b>Meal Title: </b>" + data.meals[a-1].strMeal;
-
+        "<div><b>Meal Title: </b>" + data.meals[a-1].strMeal + "</div>" +
+        "<div><img src='" + data.meals[a-1].strMealThumb + "'></div>";
+        
         mealContainer.appendChild(newDiv);
 
     }

@@ -22,3 +22,14 @@ button {
     width: 80%;
     margin: auto;
 }
+.format {
+    border: 2px solid lightcoral;
+    margin: 15px;
+    padding: 15px;
+    display: flex;
+}
+
+.format img {
+    width: 250px;
+    border-radius: 10px;
+}
