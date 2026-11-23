@@ -15,7 +15,12 @@ function moreSteps(data) {
 
     mealContainer.innerHTML = "";
 
-    for (var a = 1; a <= data.meals.length; a++) {
+    if (data.meals == null) {
+    mealContainer.innerHTML = "No Meal Found";
+    return;
+}
+
+for (var a = 1; a <= 5 && a <= data.meals.length; a++) {
 
         var newDiv = document.createElement("div");
 
