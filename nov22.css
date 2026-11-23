@@ -1,0 +1,24 @@
+body {
+    background-color: lightyellow;
+    text-align: center;
+    font-family: Arial;
+}
+
+h1 {
+    color: brown;
+}
+
+input {
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: brown;
+    color: white;
+}
+
+#showMeals {
+    width: 80%;
+    margin: auto;
+}
