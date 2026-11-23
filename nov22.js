@@ -9,3 +9,23 @@ function searchMeal() {
     .then(data => moreSteps(data));
 
 }
+function moreSteps(data) {
+
+    var mealContainer = document.getElementById("showMeals");
+
+    mealContainer.innerHTML = "";
+
+    for (var a = 1; a <= data.meals.length; a++) {
+
+        var newDiv = document.createElement("div");
+
+        newDiv.classList.add("format");
+
+        newDiv.innerHTML =
+        "<b>Meal Title: </b>" + data.meals[a-1].strMeal;
+
+        mealContainer.appendChild(newDiv);
+
+    }
+
+}
